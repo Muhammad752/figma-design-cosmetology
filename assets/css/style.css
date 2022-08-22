@@ -1,0 +1,673 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.589);
+  z-index: 2;
+}
+
+.top {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top p {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.top span {
+  height: 90px;
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  background-color: rgba(196, 196, 196, 0.1960784314);
+}
+.top .socio {
+  width: max-content;
+  display: flex;
+}
+.top .socio img {
+  padding: 0 28px;
+}
+.top button {
+  display: flex;
+  align-items: center;
+  background-color: #00868A;
+  color: white;
+  padding: 10px 15px 8px;
+  border: none;
+  gap: 10px;
+}
+.top .hide {
+  display: none;
+}
+
+nav {
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+nav input {
+  display: none;
+}
+nav .fa-solid {
+  display: none;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .btn {
+  width: 145px;
+}
+nav button {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: white;
+  border: none;
+  width: max-content;
+  padding: 10px 15px;
+}
+
+.main {
+  color: white;
+  background-color: #4FBFA5;
+}
+.main .bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .bottom li {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+}
+.main .bottom li:first-child {
+  width: 50%;
+  background-color: #00868A;
+}
+.main .bottom li:nth-child(2) {
+  width: 25%;
+}
+.main .bottom li:nth-child(3) {
+  width: 25%;
+  background-color: #00868A;
+}
+
+.main2 {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  align-items: center;
+  justify-content: space-between;
+}
+.main2 .text {
+  width: 76%;
+}
+.main2 img {
+  width: 100%;
+}
+.main2 h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+}
+.main2 p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 20px 0;
+}
+.main2 button {
+  color: white;
+  text-transform: uppercase;
+  background: #00868A;
+  padding: 15px 25px 14px;
+  margin: 20px 0;
+  border: none;
+}
+.main2 .pager > * {
+  border: 1px solid white;
+  padding: 0 15px;
+  font-size: 35px;
+  line-height: 50px;
+  border-collapse: collapse;
+}
+.main2 .pager p:first-child {
+  border-right: none;
+}
+.main2 .pager {
+  display: flex;
+  width: 120px;
+  margin-left: auto;
+  transform: translateX(50%);
+}
+
+#kosmetologiya {
+  margin: 80px 0;
+}
+#kosmetologiya img {
+  width: 100%;
+}
+#kosmetologiya .box {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: space-between;
+}
+#kosmetologiya button {
+  padding: 9px 15px 10px;
+  border: none;
+  color: white;
+  background-color: #4FBFA5;
+}
+#kosmetologiya .box > div:first-child {
+  background-color: #00868A;
+  color: white;
+}
+#kosmetologiya .box > div:first-child button {
+  margin: 35px 40px 30px;
+}
+#kosmetologiya .box > div:first-child h2 {
+  margin: 0 40px 25px 40px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 150%;
+}
+#kosmetologiya .box > div:first-child .pager a {
+  margin: 0 40px 25px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#kosmetologiya .box > div:first-child .pager span {
+  font-size: 35px;
+  padding: 5px 15px;
+  border: 1px solid white;
+}
+#kosmetologiya .content {
+  margin: 35px 0 60px;
+  position: relative;
+}
+#kosmetologiya .content > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+  opacity: 0.3;
+}
+#kosmetologiya .content > .big {
+  margin: 5px 0;
+  opacity: 1;
+}
+#kosmetologiya .content img {
+  position: absolute;
+  width: 306px;
+  height: 400px;
+  opacity: 0.7;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+#kosmetologiya .content button {
+  margin-bottom: 15px;
+}
+#kosmetologiya .content h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+}
+#kosmetologiya .content p {
+  width: 144px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+#kosmetologiya .content .big {
+  gap: 30px;
+}
+#kosmetologiya .content .big h2 {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 150%;
+  color: #00868A;
+}
+#kosmetologiya .content .big p {
+  width: unset;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+#info .box {
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+#info button {
+  padding: 9px 15px 10px;
+  border: none;
+  color: white;
+  background-color: #00868A;
+  margin: 35px 40px 30px;
+}
+#info .select {
+  color: white;
+  background-color: #4FBFA5;
+}
+#info .select li {
+  padding: 35px 40px;
+  background-color: #4FBFA5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+#info .select li.active {
+  background-color: #00868A;
+}
+#info .content {
+  background: rgba(0, 134, 138, 0.062745098);
+  padding: 35px 60px;
+}
+#info .content h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  padding-bottom: 12.5px;
+}
+#info .content li {
+  list-style-image: url(../imgs/list.svg);
+  margin-left: 14px;
+  padding: 12.5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+#special {
+  position: relative;
+  margin: 100px 0;
+}
+#special .backcolor {
+  background-color: rgba(0, 134, 138, 0.062745098);
+  height: 350px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+#special h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: #00868A;
+  text-align: center;
+  padding: 80px 0 60px;
+}
+#special .cards {
+  display: flex;
+  justify-content: space-between;
+}
+#special .card {
+  color: white;
+  position: relative;
+  width: 306px;
+  background: #00868A;
+}
+#special .card img {
+  width: 100%;
+}
+#special .card button {
+  color: white;
+  position: absolute;
+  background: #4FBFA5;
+  padding: 9px 15px 10px;
+  border: none;
+  margin: 30px;
+}
+#special .card .textField {
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#special .card .textField h3 {
+  display: inline-block;
+  width: min-content;
+}
+#special .card .textField span {
+  font-size: 27px;
+  border: 1px solid white;
+  padding: 5px 15px;
+}
+
+footer {
+  margin-top: 100px;
+}
+footer .box {
+  display: flex;
+  justify-content: space-between;
+}
+footer .items {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 30px;
+  column-gap: 191px;
+  margin-right: 68px;
+}
+footer .items li:first-child {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 150%;
+  padding-bottom: 20px;
+}
+footer .items li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  padding-bottom: 15px;
+}
+footer .contacts > div {
+  margin: 0 68px 30px;
+}
+footer .contacts span {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+footer .contacts h3 {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 150%;
+}
+footer .contacts button {
+  margin-top: 15px;
+  background-color: #00868A;
+  padding: 15px 25px 14px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+}
+footer .bottom {
+  padding-left: 30px;
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(196, 196, 196, 0.1960784314);
+}
+footer .bottom button {
+  border: none;
+  padding: 10px 15px 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: #00868A;
+}
+footer .bottom span {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  background-color: rgba(196, 196, 196, 0.1960784314);
+  height: 90px;
+}
+footer .bottom .socio {
+  display: flex;
+  align-items: center;
+}
+footer .bottom .socio img {
+  padding: 0 28px;
+}
+footer .bottom .copy {
+  max-width: 300px;
+}
+
+@media (max-width: 1375px) {
+  #special .cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 30px;
+    justify-content: space-around;
+  }
+  footer .bottom .socio > img {
+    padding: 0 10px;
+  }
+  .top .socio img {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 1375px) {
+  footer .bottom .socio {
+    display: none;
+  }
+  .top .socio {
+    z-index: 2;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 0 50% 50% 0;
+    position: fixed;
+    flex-direction: column;
+    transition: 2s;
+    background-color: #00868A;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .top .socio > img {
+    padding: 20px;
+  }
+  .top .socio span {
+    display: none;
+  }
+  .top .hide {
+    display: inline-block;
+  }
+  footer .bottom {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1024px) {
+  footer .box {
+    justify-content: center;
+  }
+  footer .items {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 90px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 945px) {
+  .top .socio {
+    left: auto;
+    right: 0;
+    border-radius: 50% 0 0 50%;
+    border-right: none;
+    border-left: 1px solid white;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 28px;
+  }
+  nav ul {
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    background-color: #4FBFA5;
+    flex-direction: column;
+    left: -100%;
+    z-index: 3;
+    padding-top: 100px;
+    justify-content: flex-start;
+    font-size: 33px;
+    line-height: 40px;
+    align-items: flex-start;
+  }
+  nav ul li {
+    padding: 30px;
+  }
+  nav input:checked ~ ul {
+    left: 0;
+  }
+  nav input:checked ~ .cover {
+    left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+  }
+  .top {
+    height: unset;
+    padding: 20px 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    row-gap: 7px;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+  }
+  .top span, .top .hide {
+    display: none;
+  }
+  .top a {
+    order: 4;
+  }
+  .top p {
+    order: 3;
+  }
+  .top button {
+    order: 2;
+  }
+  .top p {
+    width: 140px;
+    margin: auto;
+  }
+  #special .cards {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  footer .box {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 80px;
+  }
+  footer .box .items {
+    margin: 0;
+  }
+  footer .box .bottom {
+    border-bottom: none;
+    display: grid;
+    padding: 10px 20px;
+    gap: 30px;
+  }
+  footer .box .bottom span {
+    display: none;
+  }
+  .main {
+    position: relative;
+    background-color: unset;
+  }
+  .main .bottom li:nth-child(2) {
+    background-color: #4FBFA5;
+  }
+  .main2 img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  #kosmetologiya .box {
+    grid-template-columns: auto;
+  }
+  #info .box {
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 550px) {
+  .box {
+    width: 95%;
+  }
+  .main .bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .main .bottom li {
+    width: 100% !important;
+    text-align: center;
+  }
+  .main2 .text {
+    width: calc(100vw - 15px);
+  }
+  #special h2 {
+    font-size: 30px;
+  }
+  .main2 .pager {
+    transform: unset;
+  }
+}
+@media (max-width: 500px) {
+  .top .logo {
+    grid-column: 1/3;
+    align-self: center;
+    width: fit-content;
+    margin: auto;
+  }
+  .top button {
+    grid-column: 1/3;
+    align-self: center;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
